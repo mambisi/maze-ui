@@ -7,4 +7,4 @@ Inspired by Bootstrap and Semantic UI
 | Done|Feature|comment
 :---|:---:|:---
 ✅ | Navbar| Full implementation
-- [X] | Buttons | partial implementation
+[X] | Buttons | partial implementation
