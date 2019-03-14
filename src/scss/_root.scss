@@ -1,0 +1,16 @@
+*:focus {
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto'
+}
+
+@import "./navbar.scss";
+@import "./button.scss";
+@import "./search-bar.scss";
+@import "./toolbar.scss";
+@import "./input.scss";
+@import "./values.scss";
+@import "./layout.scss";

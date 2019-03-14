@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nav Bar</title>
+    <link rel="stylesheet" href="/lib/css/mazeui.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+        <div class="navbar mini primary dark fixed">
+            <button class="nav-btn">
+                <i class="material-icons">menu</i>
+            </button>
+            <div class="nav-group nav-collapse left">
+                <div class="navbar-item">
+                    <a href="#"><span>Dashboard</span></a>
+                </div>
+                <div class="navbar-item">
+                    <a href="#">Orders</a>
+                </div>
+                <div class="navbar-item active">
+                    <a href="#">Account</a>
+                </div>
+            </div>
+            <div class="nav-group right">
+                <div class="toolbar dark">
+                    <button class="toolbar-item text">
+                        <i class="material-icons">save</i>
+                        Save
+                    </button>
+                    <button class="toolbar-item icon">
+                        <i class="material-icons">refresh</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <form action="get">
+                <div class="field">
+                    <label>Name</label>
+                    <input type="text" placeholder="eg. Kwame" />
+                </div>
+            </form>
+        </div>
+        <p>
+            <button class="btn primary">Save Details</button>
+        </p>
+        <button class="btn icon circular"><i class="material-icons">accessibility</i></button>
+</body>
+
+</html>

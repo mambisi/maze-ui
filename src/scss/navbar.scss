@@ -1,0 +1,149 @@
+@import "./values.scss";
+@import "./colors.scss";
+
+.navbar.mini {
+    height: 36pt;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 44pt;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: rgb(240, 240, 240);
+}
+
+
+.navbar.raised {
+    box-shadow: 0px 2px 8px #00000050;
+}
+
+.navbar .nav-group {
+    display: flex;
+}
+
+.caption {
+    font-size: 12px;
+}
+
+.navbar .nav-group.left {
+    margin-right: auto;
+    flex: 1;
+    justify-content: flex-start;
+    order: 1
+}
+
+.nav-group.nav-collapse {
+
+    // Small devices (landscape phones, 576px and up)
+    @media (max-width: $min-device-width) {
+        display: none;
+    }
+}
+
+.navbar button.nav-btn {
+    color: black;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    min-width: 28pt;
+    max-width: 28pt;
+    align-self: center;
+    padding: 0pt;
+    min-height: 28pt;
+    max-height: 28pt;
+    display: none;
+    text-align: center;
+
+    
+
+    // Small devices (landscape phones, 576px and up)
+    @media (max-width: $min-device-width) {
+        display: block;
+    }
+
+}
+
+button.nav-btn:active,.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.navbar.dark button.nav-btn {
+    color: white;
+}
+
+.navbar .nav-group.right {
+    margin-left: auto;
+    flex: 1;
+    order: 3;
+    justify-content: flex-end;
+    align-content: center;
+
+}
+
+.navbar .nav-group.center {
+    margin-right: auto;
+    margin-left: auto;
+    flex: 1;
+    order: 2;
+    justify-content: center;
+}
+
+.navbar.dark {
+    background-color: rgb(20, 20, 20);
+}
+
+.navbar.dark.primary {
+    background-color: $primary;
+}
+
+
+.navbar.dark .nav-group .navbar-item a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar.dark .nav-group .navbar-item a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar.dark .nav-group .navbar-item.active a {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.navbar.fixed {
+    position: sticky;
+    top: 0em;
+}
+
+
+.navbar-item {
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    background-color: inherit;
+
+    i {
+        font-size: 28px
+    }
+}
+
+.navbar-item.active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-item a {
+    color: rgb(128, 128, 128);
+    height: 100%;
+    display: flex;
+    padding-left: 14pt;
+    padding-right: 14pt;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.navbar-item a:hover {
+    color: rgb(20, 20, 20);
+}

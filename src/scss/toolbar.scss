@@ -1,0 +1,56 @@
+@import "./colors.scss";
+
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding-left: 12pt;
+    padding-right: 12pt;
+    
+
+
+    .toolbar-item {
+        color: $primary;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    .toolbar-item.icon {
+        border-radius: 50%;
+        min-width: 28pt;
+        max-width: 28pt;
+        padding: 0pt;
+        min-height: 28pt;
+        max-height: 28pt;
+        i {
+            font-size: 18pt;
+            display: block;
+        }
+    }
+
+    .toolbar-item.text {
+        border: none;
+        background-color: transparent;
+        border-radius: 4pt;
+        font-size: medium;
+        padding: 0pt 12pt;
+        i {
+            display: none;
+        }
+    }
+
+    .toolbar-item:active{
+        background-color: transparentize($color: $primary, $amount: 0.9);
+    }
+}
+
+.toolbar.dark {
+    .toolbar-item {
+        color: white;
+    }
+    .toolbar-item:active{
+        background-color: transparentize($color: #000000, $amount: 0.9);
+    }
+}
